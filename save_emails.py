@@ -37,7 +37,8 @@ for folder in folders:
 
 now = datetime.now()
 
-forbidden_chars = [':', '=>', '/', '?', '->', '"', '”', '!', '*', '(', ')', '|', '#']
+# The character before the tab looks like it's a space, but it's actually a "non-breaking space" (ASCII Char 160)
+forbidden_chars = [':', '=>', '/', '?', '->', '"', '”', '!', '*', '(', ')', '|', '#', '<', ' ', '\t']
 
 for mailbox in mailboxes:
 
